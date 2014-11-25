@@ -21,7 +21,6 @@ def suite():
     a = 1
     b = 2
     while diviseur(a) <= 500:
-            print(a)
             a += b
             b += 1
     return a
