@@ -14,6 +14,6 @@ def fibo_somme():
         if a%2 == 0:
             s += a
             a,b=a+b,a
-    turn s
+    return s
 
 print(fibo_somme())
