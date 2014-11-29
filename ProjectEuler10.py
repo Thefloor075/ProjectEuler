@@ -7,7 +7,7 @@ Find the sum of all the primes below two million.
 from math import sqrt
 
 
-def condition(n):
+def nombre_premier(n):
     racine = int(sqrt(n))
     for i in range(2,racine+1):
         if n%i==0 and n!=i:
@@ -18,9 +18,8 @@ def premier():
     n = 3
     p = []
     while n <= 2000000:
-        if condition(n) == True:
+        if nombre_premier(n) == True:
             p.append(n)
-            print(n)
             n += 2
         else:
             n += 2
@@ -29,9 +28,6 @@ def premier():
 def somme():
     liste = [2]
     liste = premier()
-    a = 2
-    for element in liste:
-        a += element
-    return a
+    return sum(liste)
 
-print(somme())
+print(somme()) 
